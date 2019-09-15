@@ -1,0 +1,141 @@
+body {
+  /* määritetään sisältöalueen oletusfontti */
+  font-family: 'Roboto', sans-serif;
+  /* tasataan sisältö keskelle näyttöä (margin left & right = auto) */
+  margin: 0 auto;
+  width: 992px;
+}
+
+h1 {
+  /* määritetään fontin väri */
+  color: #DC143C;
+  /* suurennetaan fontin kokoa 3-kertaiseksi */
+  font-size: 300%;
+  /* keskitetään otsikko */
+  text-align: center;
+}
+
+h2 {
+  /* määritetään fontin väri */
+  color: #DC143C;
+  /* suurennetaan fontin kokoa */
+  font-size: 150%;
+}
+
+.summary img {
+  /* muutetaan kuva pyöreäksi */
+  border-radius: 50%;
+  /* Asemoidaan kuva vasempaan laitaan niin, että teksti tulee kuvan viereen */
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.summary p {
+  /* kasvatetaan riviväliä */
+  line-height: 150%;
+}
+
+.work {
+  /* Poistetaan floatin vaikutus alempiin elementteihin */
+  clear: both;
+}
+
+.cards {
+  /* määritetään flexbox-säiliö, lähde:
+  https://www.w3schools.com/css/css3_flexbox.asp */
+  display: flex;
+  /* "flex items will wrap if necessary" */
+  flex-wrap: wrap;
+  /* määritetään sisältökorttien välistys tasaiseksi */
+  justify-content: space-around;
+}
+
+.cards div {
+  background-color: #DC143C;
+  /* pyöristyetään kortin kulmat */
+  border-radius: 20px;
+  color: white;
+  margin: 10px;
+  margin-top: 30px;
+  padding: 10px;
+  text-align: center;
+  width: 250px;
+}
+
+.certification-details {
+  display: flex;
+  justify-content: space-around;
+}
+
+.certification-details div {
+  background-color: #DC143C;
+  border-radius: 20px;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 400px;
+}
+
+.certification-details a {
+  color: white;
+}
+
+.footer {
+  border-top: 2px solid black;
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer h2 {
+  margin-right: 15px;
+}
+
+.footer img {
+  background-color: white;
+  height: 50px;
+  margin: 10px;
+}
+
+/* CSS säännöt puhelimille. Lähteenä käytetty mm.
+  https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    /* asetetaan sisällön leveydeksi 100% */
+    body {
+      width: 100%;
+    }
+    h1 {
+      padding-top: 10px;
+    }
+    /* keskitetään profiilikuva */
+    .summary {
+      text-align: center;
+    }
+    .summary img {
+      /* lisätään kuvan ympärille reunaviiva */
+      border: 4px solid #DC143C;
+      /* ei käytetä floatia, ettei teksti tule kuvan viereen */
+      float: none;
+    }
+    .summary p {
+      margin: 30px;
+      /* tasataan teksti molempiin reunoihin */
+      text-align: justify;
+    }
+    h2 {
+      margin-bottom: 0px;
+      /* keskitetään otsikot */
+      text-align: center;
+    }
+    .footer h2 {
+      /* ei näytetä Find me online -tekstiä mobiilissa */
+      display: none;
+    }
+    .footer {
+      /* tasataan välistys some-ikonien välillä */
+      justify-content: space-around;
+    }
+  }
