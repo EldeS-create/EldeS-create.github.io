@@ -8,7 +8,7 @@ body {
 
 h1 {
   /* määritetään fontin väri */
-  color: #DC143C;
+  color: black;
   /* suurennetaan fontin kokoa 3-kertaiseksi */
   font-size: 300%;
   /* keskitetään otsikko */
@@ -16,10 +16,12 @@ h1 {
 }
 
 h2 {
-  /* määritetään fontin väri */
-  color: #DC143C;
+  /* asetetaan jakoviiva */
+  border-bottom: 2px solid black;
   /* suurennetaan fontin kokoa */
   font-size: 150%;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .summary img {
@@ -52,7 +54,8 @@ h2 {
 }
 
 .cards div {
-  background-color: #DC143C;
+  /*asetetaan taustaväri korteille*/
+  background-color: #ff1a66;
   /* pyöristyetään kortin kulmat */
   border-radius: 20px;
   color: white;
@@ -69,10 +72,11 @@ h2 {
 }
 
 .certification-details div {
-  background-color: #DC143C;
+  background-color: #ff1a66;
   border-radius: 20px;
   color: white;
   margin: 10px;
+  margin-top: 30px;
   padding: 10px;
   text-align: center;
   width: 400px;
@@ -85,10 +89,12 @@ h2 {
 .footer {
   border-top: 2px solid black;
   display: flex;
+  justify-content: center;
   margin-top: 20px;
 }
 
 .footer h2 {
+  border-bottom: none;
   margin-right: 15px;
 }
 
@@ -116,7 +122,7 @@ h2 {
     }
     .summary img {
       /* lisätään kuvan ympärille reunaviiva */
-      border: 4px solid #DC143C;
+      border: 4px solid #ff1a66;
       /* ei käytetä floatia, ettei teksti tule kuvan viereen */
       float: none;
     }
