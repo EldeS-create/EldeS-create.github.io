@@ -136,7 +136,7 @@ button {
     }
     .summary img {
       /* lisätään kuvan ympärille reunaviiva */
-      border: 4px solid #ff1a66;
+      border: 4px solid #993366;
       /* ei käytetä floatia, ettei teksti tule kuvan viereen */
       float: none;
     }
